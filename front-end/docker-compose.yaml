@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  flutter-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: flutter-nginx-front-web-image
+    container_name: flutter_nginx_container
+    ports:
+      - "80:80"
